@@ -17,7 +17,7 @@ Run the installer directly from the repository:
 curl -fsSL https://raw.githubusercontent.com/binbinsh/bbedit-monokai-light/main/install.sh | sh
 ```
 
-The script downloads `Monokai Light.bbColorScheme`, creates `~/Library/Application Support/BBEdit/Color Schemes` if needed, backs up any existing copy, and places the new scheme in that folder.
+The script downloads `Monokai Light.bbColorScheme`, creates `~/Library/Application Support/BBEdit/Color Schemes` if needed, and places the new scheme in that folder.
 
 ## Manual Install
 
@@ -33,7 +33,7 @@ The script downloads `Monokai Light.bbColorScheme`, creates `~/Library/Applicati
 
 ## Updating or Removing
 
-- Re-run the install command to update in place; the script backs up the existing file with a timestamp.
+- Re-run the install command to update in place.
 - To remove the scheme, delete `~/Library/Application Support/BBEdit/Color Schemes/Monokai Light.bbColorScheme` and choose another scheme inside BBEdit.
 
 ## License
