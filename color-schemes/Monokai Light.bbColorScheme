@@ -29,9 +29,9 @@
 	<key>UseCustomHighlightColor</key>
 	<false/>
 	<key>com.barebones.bblm.JavaScript.regexp</key>
-	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
+	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
 	<key>com.barebones.bblm.Pyth.decorator</key>
-	<string>rgba(0.992157,0.592157,0.121569,1.000000)</string>
+	<string>rgba(0.803922,0.215686,0.015686,1.000000)</string>
 	<key>com.barebones.bblm.Pyth.triple-string</key>
 	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
 	<key>com.barebones.bblm.TeX.math-string</key>
@@ -73,19 +73,19 @@
 	<key>com.barebones.bblm.html.anchor</key>
 	<string>rgba(0.415686,0.686275,0.098039,1.000000)</string>
 	<key>com.barebones.bblm.html.attribute-name</key>
-	<string>rgba(0.992157,0.592157,0.121569,1.000000)</string>
+	<string>rgba(0.415686,0.686275,0.098039,1.000000)</string>
 	<key>com.barebones.bblm.html.attribute-value</key>
 	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
 	<key>com.barebones.bblm.html.image</key>
 	<string>rgba(0.156863,0.776471,0.894118,1.000000)</string>
 	<key>com.barebones.bblm.indexed-symbol</key>
-	<string>rgba(0.415686,0.686275,0.098039,1.000000)</string>
+	<string>rgba(0.682353,0.505882,1.000000,1.000000)</string>
 	<key>com.barebones.bblm.keyword</key>
 	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
 	<key>com.barebones.bblm.keyword-argument-name</key>
 	<string>rgba(0.992157,0.592157,0.121569,1.000000)</string>
 	<key>com.barebones.bblm.markdown.Emph</key>
-	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
+	<string>rgba(0.156863,0.776471,0.894118,1.000000)</string>
 	<key>com.barebones.bblm.markdown.HorizontalRule</key>
 	<string>rgba(0.623529,0.623529,0.560784,1.000000)</string>
 	<key>com.barebones.bblm.markdown.ImageAltText</key>
@@ -105,11 +105,11 @@
 	<key>com.barebones.bblm.markdown.LinkDefUrl</key>
 	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
 	<key>com.barebones.bblm.markdown.ListItemMarker</key>
-	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
+	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
 	<key>com.barebones.bblm.markdown.Pre</key>
 	<string>rgba(0.992157,0.592157,0.121569,1.000000)</string>
 	<key>com.barebones.bblm.markdown.QuoteMarker</key>
-	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
+	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
 	<key>com.barebones.bblm.markdown.QuotedContent</key>
 	<string>rgba(0.623529,0.623529,0.560784,1.000000)</string>
 	<key>com.barebones.bblm.number</key>
@@ -119,13 +119,13 @@
 	<key>com.barebones.bblm.perl.outer-pod</key>
 	<string>rgba(0.623529,0.623529,0.560784,1.000000)</string>
 	<key>com.barebones.bblm.perl.pre-generic-string</key>
-	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
+	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
 	<key>com.barebones.bblm.predefined-symbol</key>
-	<string>rgba(0.156863,0.776471,0.894118,1.000000)</string>
+	<string>rgba(0.682353,0.505882,1.000000,1.000000)</string>
 	<key>com.barebones.bblm.preprocessor</key>
-	<string>rgba(0.156863,0.776471,0.894118,1.000000)</string>
+	<string>rgba(0.803922,0.215686,0.015686,1.000000)</string>
 	<key>com.barebones.bblm.ruby.regexp</key>
-	<string>rgba(0.976471,0.149020,0.447059,1.000000)</string>
+	<string>rgba(0.949020,0.352941,0.000000,1.000000)</string>
 	<key>com.barebones.bblm.ruby.symbol</key>
 	<string>rgba(0.992157,0.592157,0.121569,1.000000)</string>
 	<key>com.barebones.bblm.sgml-cdata</key>
