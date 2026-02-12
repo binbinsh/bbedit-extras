@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>com.barebones.DocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>Dart</string>
+	<key>BBLMLanguageCode</key>
+	<string>D4rt</string>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+
+	<key>BBLMFilenameExtensions</key>
+	<array>
+		<string>dart</string>
+	</array>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.dart</string>
+		</dict>
+	</array>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMFunctionScannerDoesFoldsToo</key>
+	<true/>
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+
+	<key>BBLMCommentLineDefault</key>
+	<string>// </string>
+	<key>BBLMCommentPrefixDefault</key>
+	<string>/* </string>
+	<key>BBLMCommentSuffixDefault</key>
+	<string> */</string>
+
+	<key>BBLMReferenceSearchURLTemplate</key>
+	<string>https://www.google.com/search?q=__SYMBOLNAME__+Dart</string>
+
+	<key>BBLMKeywords</key>
+	<array>
+		<dict>
+			<key>RunKind</key>
+			<string>com.barebones.bblm.keyword</string>
+			<key>Keywords</key>
+			<array>
+				<string>abstract</string>
+				<string>as</string>
+				<string>assert</string>
+				<string>async</string>
+				<string>await</string>
+				<string>base</string>
+				<string>break</string>
+				<string>case</string>
+				<string>catch</string>
+				<string>class</string>
+				<string>const</string>
+				<string>continue</string>
+				<string>covariant</string>
+				<string>default</string>
+				<string>deferred</string>
+				<string>do</string>
+				<string>dynamic</string>
+				<string>else</string>
+				<string>enum</string>
+				<string>export</string>
+				<string>extends</string>
+				<string>extension</string>
+				<string>external</string>
+				<string>factory</string>
+				<string>false</string>
+				<string>final</string>
+				<string>finally</string>
+				<string>for</string>
+				<string>Function</string>
+				<string>get</string>
+				<string>hide</string>
+				<string>if</string>
+				<string>implements</string>
+				<string>import</string>
+				<string>in</string>
+				<string>interface</string>
+				<string>is</string>
+				<string>late</string>
+				<string>library</string>
+				<string>mixin</string>
+				<string>new</string>
+				<string>null</string>
+				<string>of</string>
+				<string>on</string>
+				<string>operator</string>
+				<string>part</string>
+				<string>required</string>
+				<string>rethrow</string>
+				<string>return</string>
+				<string>sealed</string>
+				<string>set</string>
+				<string>show</string>
+				<string>static</string>
+				<string>super</string>
+				<string>switch</string>
+				<string>sync</string>
+				<string>this</string>
+				<string>throw</string>
+				<string>true</string>
+				<string>try</string>
+				<string>type</string>
+				<string>typedef</string>
+				<string>var</string>
+				<string>void</string>
+				<string>when</string>
+				<string>while</string>
+				<string>with</string>
+				<string>yield</string>
+			</array>
+		</dict>
+		<dict>
+			<key>RunKind</key>
+			<string>com.barebones.bblm.predefined-symbol</string>
+			<key>Keywords</key>
+			<array>
+				<string>BigInt</string>
+				<string>bool</string>
+				<string>DateTime</string>
+				<string>double</string>
+				<string>Duration</string>
+				<string>Future</string>
+				<string>FutureOr</string>
+				<string>int</string>
+				<string>Iterable</string>
+				<string>Iterator</string>
+				<string>List</string>
+				<string>Map</string>
+				<string>Never</string>
+				<string>Null</string>
+				<string>num</string>
+				<string>Object</string>
+				<string>Pattern</string>
+				<string>Record</string>
+				<string>RegExp</string>
+				<string>Runes</string>
+				<string>Set</string>
+				<string>Stream</string>
+				<string>String</string>
+				<string>Symbol</string>
+				<string>Type</string>
+				<string>Uri</string>
+			</array>
+		</dict>
+	</array>
+
+	<key>BBLMKeywordPatterns</key>
+	<array>
+		<dict>
+			<key>RunKind</key>
+			<string>com.barebones.bblm.preprocessor</string>
+			<key>Pattern</key>
+			<string>(?x: @ [A-Za-z_][A-Za-z0-9_]* (?: \. [A-Za-z_][A-Za-z0-9_]* )* )</string>
+		</dict>
+	</array>
+
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string>[:alnum:]_$</string>
+		<key>Open Statement Blocks</key>
+		<string>{</string>
+		<key>Close Statement Blocks</key>
+		<string>}</string>
+		<key>Comment Pattern</key>
+		<string><![CDATA[(?x:
+			(?> //[^\r]* )
+			|
+			(?>
+				/\*
+				(?:
+					[^/*]
+					| /(?!\*)
+					| \*(?!/)
+					| (?0)
+				)*
+				(?:\*/|$)
+			)
+		)]]></string>
+		<key>String Pattern</key>
+		<string><![CDATA[(?x:
+			(?> r""" (?s: .*? ) (?: """ | $ ) )
+			|
+			(?> r''' (?s: .*? ) (?: ''' | $ ) )
+			|
+			(?> r" [^"\r]* (?: " | $ ) )
+			|
+			(?> r' [^'\r]* (?: ' | $ ) )
+			|
+			(?> """ (?s: \\. | (?!"""). )*? (?: """ | $ ) )
+			|
+			(?> ''' (?s: \\. | (?!'''). )*? (?: ''' | $ ) )
+			|
+			(?> " (?s: \\. | [^"\\\r] )* (?: " | $ ) )
+			|
+			(?> ' (?s: \\. | [^'\\\r] )* (?: ' | $ ) )
+		)]]></string>
+		<key>Number Pattern</key>
+		<string><![CDATA[(?x:
+			\b
+			(?:
+				0[xX][0-9A-Fa-f](?:_?[0-9A-Fa-f])*
+				|
+				(?:\d(?:_?\d)*) (?:\.(?:\d(?:_?\d)*)?)? (?:[eE][+\-]?\d(?:_?\d)*)?
+				|
+				\.(?:\d(?:_?\d)*) (?:[eE][+\-]?\d(?:_?\d)*)?
+			)
+			\b
+		)]]></string>
+		<key>Function Pattern</key>
+		<string><![CDATA[(?x:
+			^[ \t]*
+			(?P<function>
+				(?:@[\w$.]+\s*)*
+				(?:(?:external|static|const|factory|late|final|covariant|required|abstract)\s+)*
+				(?:[A-Za-z_$][A-Za-z0-9_$<>,.?&\[\]\s]*\s+)?
+				(?:(?:get|set)\s+)?
+				(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
+				\s*(?:<[^(){}\r;=]+>\s*)?
+				\([^;\r{}]*\)
+				\s*(?:async\*?|sync\*?)?
+				\s*(?:=>|\{)
+			)
+		)]]></string>
+		<key>Skip Pattern</key>
+		<string><![CDATA[(?x:
+			(?P>comment)	|
+			(?P>number)	|
+			(?P>string)
+		)]]></string>
+	</dict>
+</dict>
+</plist>

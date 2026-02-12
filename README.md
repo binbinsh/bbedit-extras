@@ -1,41 +1,61 @@
-# Monokai Light for BBEdit
-
-## About
+# BBEdit Extras
 
 <img align="right" width="40%" style="max-width:320px; height:auto;" src="screenshot.png" alt="BBEdit Monokai Light preview">
 
-Monokai Light-inspired color scheme for BBEdit with crisp syntax contrast on a white background. The palette mirrors the classic Monokai scopes (comments, keywords, strings, numbers, and markup) while tuning selection and highlight colors for BBEdit.
+A collection of add-ons for [BBEdit](https://www.barebones.com/products/bbedit/), the professional text editor for macOS.
 
+- **Monokai Light** — a light color scheme with crisp, Monokai-inspired syntax contrast on a clean white background.
+- **Dart Language Module** — codeless language module providing syntax highlighting, comment parsing, and function folding for `.dart` files.
 
 <br clear="all">
 
-## Quick Install
+## Installation
 
-Run the installer directly from the repository:
+One-line install,
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/binbinsh/bbedit-monokai-light/main/install.sh | sh
 ```
 
-The script downloads `Monokai Light.bbColorScheme`, creates `~/Library/Application Support/BBEdit/Color Schemes` if needed, and places the new scheme in that folder.
+This installs both files to the correct BBEdit support directories:
 
-## Manual Install
+| File | Destination |
+|------|-------------|
+| `Monokai Light.bbColorScheme` | `~/Library/Application Support/BBEdit/Color Schemes/` |
+| `Dart.plist` | `~/Library/Application Support/BBEdit/Language Modules/` |
 
-1. Download `color-schemes/Monokai Light.bbColorScheme` from the repository.
-2. Copy the file to `~/Library/Application Support/BBEdit/Color Schemes/`.
-3. Restart BBEdit if it was running.
+Restart BBEdit after installation to load the language module.
 
-## Using the Theme
+## Usage
 
-- Open BBEdit and go to `BBEdit ▶ Settings ▶ Text Colors`.
-- Select **Monokai Light** from the color schemes list.
-- Inspect sample code to confirm highlight colors (keywords in pink, strings in orange, numbers in violet, types in aqua, and comments in muted gray).
+Open **BBEdit → Settings → Text Colors** and select **Monokai Light** from the color scheme list.
 
-## Updating or Removing
+## Dart Language Module
 
-- Re-run the install command to update in place.
-- To remove the scheme, delete `~/Library/Application Support/BBEdit/Color Schemes/Monokai Light.bbColorScheme` and choose another scheme inside BBEdit.
+| Feature | Details |
+|---------|---------|
+| File types | `.dart` |
+| Keywords | Dart language keywords and built-in core types |
+| Highlights | Annotations, comments, strings, numeric literals |
+| Extras | Nested `/* ... */` comment parsing, function scanning & folding |
+
+## Dart LSP
+
+With the Dart language module installed, you can enable LSP support for full code intelligence:
+
+1. Install the Dart SDK (`brew install dart-sdk`, or use the one bundled with Flutter).
+2. Open **BBEdit → Settings → Languages**, find **Dart**, and switch to the **Server** tab.
+3. Set **Command** to `/opt/homebrew/bin/dart`.
+4. Set **Arguments** to `language-server --protocol=lsp`.
+
+Once configured, you get autocompletion, diagnostics, and go-to-definition for `.dart` files.
+
+## Updating & Uninstalling
+
+- **Update:** Re-run the install command — files are overwritten in place.
+- **Delete color scheme:** `rm ~/Library/Application Support/BBEdit/Color Schemes/Monokai Light.bbColorScheme`
+- **Delete Dart module:** `rm ~/Library/Application Support/BBEdit/Language Modules/Dart.plist`
 
 ## License
 
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+[Apache License 2.0](LICENSE)
