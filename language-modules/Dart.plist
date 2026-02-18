@@ -224,15 +224,16 @@
 		<string><![CDATA[(?x:
 			^[ \t]*
 			(?P<function>
-				(?:@[\w$.]+\s*)*
-				(?:(?:external|static|const|factory|late|final|covariant|required|abstract)\s+)*
-				(?:[A-Za-z_$][A-Za-z0-9_$<>,.?&\[\]\s]*\s+)?
-				(?:(?:get|set)\s+)?
+				(?:(?:@[\w$.]+\s*)*
+				(?:(?:abstract|base|final|sealed|interface|external)\s+)*
+				(?:
+					(?:mixin\s+class|extension\s+type|extension|mixin|class|enum|typedef|record)
+					[ \t]+
+				)
 				(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
-				\s*(?:<[^(){}\r;=]+>\s*)?
-				\([^;\r{}]*\)
-				\s*(?:async\*?|sync\*?)?
-				\s*(?:=>|\{|;)
+				\s*(?:<[^{}\r;=]+>\s*)?
+				(?:\s+on\b[^\r{}\n;=]+)?
+				(?:\{|;|=)
 			)
 		)]]></string>
 		<key>Skip Pattern</key>
