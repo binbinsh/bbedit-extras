@@ -232,7 +232,7 @@
 				)
 				(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
 				\s*(?:<[^{}\r;=]+>\s*)?
-				(?:\s+(?:on|extends|implements|with)\b[^\r{}\n;=]+)*
+				(?:[ \t]+(?:on|extends|implements|with)[^{}\r\n;=]+)*
 				(?:\{|;|=)
 			)
 		)]]></string>
