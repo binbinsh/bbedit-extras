@@ -8,7 +8,7 @@ SCHEME_NAME="Monokai Light.bbColorScheme"
 SCHEME_SOURCE="color-schemes/${SCHEME_NAME}"
 MODULE_NAME="Dart.plist"
 MODULE_SOURCE="language-modules/${MODULE_NAME}"
-REPO_URL="https://github.com/binbinsh/bbedit-monokai-light.git"
+REPO_URL="https://github.com/binbinsh/bbedit-extras.git"
 
 if ! command -v git >/dev/null 2>&1; then
   printf '%s\n' "git is required to download ${SCHEME_NAME} and ${MODULE_NAME}." >&2

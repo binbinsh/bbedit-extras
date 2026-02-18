@@ -14,7 +14,7 @@ A collection of add-ons for [BBEdit](https://www.barebones.com/products/bbedit/)
 One-line install,
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/binbinsh/bbedit-monokai-light/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/binbinsh/bbedit-extras/main/install.sh | sh
 ```
 
 This installs both files to the correct BBEdit support directories:
