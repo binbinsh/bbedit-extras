@@ -227,13 +227,24 @@
 				(?:(?:@[\w$.]+\s*)*
 				(?:(?:abstract|base|final|sealed|interface|external)\s+)*
 				(?:
-					(?:mixin\s+class|extension\s+type|extension|mixin|class|enum|typedef|record)
-					[ \t]+
+					(?:
+						(?:mixin\s+class|extension\s+type|extension|mixin|class|enum|typedef|record)
+						[ \t]+
+						(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
+						\s*(?:<[^{}\r;=]+>\s*)?
+						(?:[ \t]+(?:on|extends|implements|with)[^{}\r\n;=]+)*
+						(?:\{|;|=)
+					)
+					|
+					(?:(?:external|static|const|factory|late|final|covariant|required|abstract)\s+)*
+					(?:[A-Za-z_$][A-Za-z0-9_$<>,.?&\[\]\s]*\s+)?
+					(?:(?:get|set)\s+)?
+					(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
+					\s*(?:<[^(){}\r;=]+>\s*)?
+					\([^;\r{}]*\)
+					\s*(?:async\*?|sync\*?)?
+					\s*(?:=>|\{|;)
 				)
-				(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
-				\s*(?:<[^{}\r;=]+>\s*)?
-				(?:[ \t]+(?:on|extends|implements|with)[^{}\r\n;=]+)*
-				(?:\{|;|=)
 			)
 		)]]></string>
 		<key>Skip Pattern</key>
