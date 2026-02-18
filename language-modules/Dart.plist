@@ -224,15 +224,43 @@
 		<string><![CDATA[(?x:
 			^[ \t]*
 			(?P<function>
-				(?:@[\w$.]+\s*)*
-				(?:(?:external|static|const|factory|late|final|covariant|required|abstract)\s+)*
-				(?:[A-Za-z_$][A-Za-z0-9_$<>,.?&\[\]\s]*\s+)?
-				(?:(?:get|set)\s+)?
-				(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
-				\s*(?:<[^(){}\r;=]+>\s*)?
-				\([^;\r{}]*\)
-				\s*(?:async\*?|sync\*?)?
-				\s*(?:=>|\{)
+				(?:
+					(?:@[\w$.]+\s*)*
+					(?:(?:abstract|base|final|sealed)\s+)*
+					(?:(?:class|enum|typedef|interface|record|mixin(?:\s+class)?|extension\s+type)\s+)
+					(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
+					\s*(?:<[^{}\r;=]+>\s*)?
+					(?:[^\r\n{;]*)?
+					(?:\{|;)
+				  |
+					extension\b\s+
+					(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
+					\s*(?:<[^{}\r;=]+>\s*)?
+					\s+on\b
+					(?:[^\r\n{;]*)?
+					(?:\{|;)
+				  |
+					extension\b\s+on\b\s+
+					(?P<function_name>[A-Za-z_$][A-Za-z0-9_$]*)
+					\s*(?:<[^{}\r;=]+>\s*)?
+					(?:[^\r\n{;]*)?
+					(?:\{|;)
+				  |
+					(?:@[\w$.]+\s*)*
+					(?:(?:external|static|const|factory|late|final|covariant|required|abstract)\s+)*
+					(?:[A-Za-z_$][A-Za-z0-9_$<>,.?&\[\]\s]*\s+)?
+					(?:(?:get|set)\s+)?
+					(?P<function_name>
+						(?:[A-Za-z_$][A-Za-z0-9_$]*(?:\.[A-Za-z_$][A-Za-z0-9_$]*)?)
+						|
+						(?:operator\b\s*[^ \t(\r{};=]+)
+					)
+					\s*(?:<[^(){}\r;=]+>\s*)?
+					\([^;\r{}\n]*\)
+					\s*(?:\:[^{}\r;=]+)?
+					\s*(?:async\*?|sync\*?)?
+					\s*(?:=>|;|\{)
+				)
 			)
 		)]]></string>
 		<key>Skip Pattern</key>
