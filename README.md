@@ -5,6 +5,7 @@
 A collection of add-ons for [BBEdit](https://www.barebones.com/products/bbedit/), the professional text editor for macOS.
 
 - **Monokai Light** — a light color scheme with crisp, Monokai-inspired syntax contrast on a clean white background.
+- **Vercel** — a dark color scheme based on Ghostty's bundled Vercel palette.
 - **Dart Language Module** — codeless language module providing syntax highlighting, comment parsing, and function folding for `.dart` files.
 
 <br clear="all">
@@ -21,14 +22,14 @@ This installs both files to the correct BBEdit support directories:
 
 | File | Destination |
 |------|-------------|
-| `Monokai Light.bbColorScheme` | `~/Library/Application Support/BBEdit/Color Schemes/` |
+| `*.bbColorScheme` | `~/Library/Application Support/BBEdit/Color Schemes/` |
 | `Dart.plist` | `~/Library/Application Support/BBEdit/Language Modules/` |
 
 Restart BBEdit after installation to load the language module.
 
 ## Usage
 
-Open **BBEdit → Settings → Text Colors** and select **Monokai Light** from the color scheme list.
+Open **BBEdit → Settings → Text Colors** and select **Monokai Light** or **Vercel** from the color scheme list.
 
 ## Dart Language Module
 
@@ -53,7 +54,7 @@ Once configured, you get autocompletion, diagnostics, and go-to-definition for `
 ## Updating & Uninstalling
 
 - **Update:** Re-run the install command — files are overwritten in place.
-- **Delete color scheme:** `rm ~/Library/Application Support/BBEdit/Color Schemes/Monokai Light.bbColorScheme`
+- **Delete color schemes:** remove the `.bbColorScheme` files from `~/Library/Application Support/BBEdit/Color Schemes/`
 - **Delete Dart module:** `rm ~/Library/Application Support/BBEdit/Language Modules/Dart.plist`
 
 ## License
