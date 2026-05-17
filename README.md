@@ -5,7 +5,8 @@
 A collection of add-ons for [BBEdit](https://www.barebones.com/products/bbedit/), the professional text editor for macOS.
 
 - **Monokai Light** — a light color scheme with crisp, Monokai-inspired syntax contrast on a clean white background.
-- **Vercel** — a dark color scheme based on Ghostty's bundled Vercel palette.
+- **Vercel** — a softened dark color scheme based on the Codex/Vercel neutral palette.
+- **Vercel Light** — a light companion to the Vercel scheme with the same syntax color roles.
 - **Dart Language Module** — codeless language module providing syntax highlighting, comment parsing, and function folding for `.dart` files.
 
 <br clear="all">
@@ -18,7 +19,7 @@ One-line install,
 curl -fsSL https://raw.githubusercontent.com/binbinsh/bbedit-extras/main/install.sh | sh
 ```
 
-This installs both files to the correct BBEdit support directories:
+This installs the color schemes and language module to the correct BBEdit support directories:
 
 | File | Destination |
 |------|-------------|
@@ -29,7 +30,7 @@ Restart BBEdit after installation to load the language module.
 
 ## Usage
 
-Open **BBEdit → Settings → Text Colors** and select **Monokai Light** or **Vercel** from the color scheme list.
+Open **BBEdit → Settings → Text Colors** and select **Monokai Light**, **Vercel**, or **Vercel Light** from the color scheme list.
 
 ## Dart Language Module
 
